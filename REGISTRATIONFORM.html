@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: gold;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 90%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-bottom: 10px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: gold;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #e0aa00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="Registerd.png">
+        <fieldset>
+            <legend>User Information</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="firstName" required><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lastName" required><br>
+            <label for="email">Gmail:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college_name" required><br>
+            <label>Branch:</label><br>
+            <input type="radio" id="it" name="your_branch" value="IT">
+            <label for="it">IT</label><br>
+            <input type="radio" id="cse" name="your_branch" value="CSE">
+            <label for="cse">CSE</label><br>
+            <input type="radio" id="csse" name="your_branch" value="CSSE">
+            <label for="csse">CSSE</label><br>
+            <label>Courses:</label><br>
+            <input type="checkbox" id="wt" name="your_courses[]" value="WT">
+            <label for="wt">WT</label><br>
+            <input type="checkbox" id="dbms" name="your_courses[]" value="DBMS">
+            <label for="dbms">DBMS</label><br>
+            <input type="checkbox" id="java" name="your_courses[]" value="JAVA">
+            <label for="java">JAVA</label><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>

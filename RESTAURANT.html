@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aliceblue;
+            padding: 10px;
+        }
+        .menu-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: aliceblue;
+        }
+        .menu-title {
+            text-align: center;
+            font-family: cursive;
+            color: red;
+            background-color: yellow;
+            border: 5px double orange;
+            padding: 5px;
+        }
+        .menu-section {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: gray;
+        }
+        .menu-section img {
+            float: right;
+            margin-left: 10px;
+        }
+        .menu-list {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        .menu-list li {
+            margin: 5px 0;
+        }
+        .menu-definition {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1 class="menu-title">Menu</h1>
+        
+        <div class="menu-section">
+            <fieldset>
+                <legend>Breakfast</legend>
+                <img src="breakfast.jpg" height="150" width="200" alt="Breakfast" />
+                <ul class="menu-list">
+                    <li>Masala Dosa - Rs.25</li>
+                    <li>Plain Dosa - Rs.20</li>
+                    <li>Onion Dosa - Rs.30</li>
+                    <li>Puri (2) - Rs.20</li>
+                    <li>Idly (2) - Rs.20</li>
+                    <li>Vada (2) - Rs.20</li>
+                </ul>
+            </fieldset>
+        </div>
+        
+        <div class="menu-section">
+            <fieldset>
+                <legend>Lunch - Veg</legend>
+                <img src="veg.jpg" height="150" width="200" alt="Veg Lunch" />
+                <ul class="menu-list">
+                    <li>Veg Biryani - Rs.80</li>
+                    <li>Veg Pulao - Rs.60</li>
+                    <li>Paneer Butter Masala - Rs.150</li>
+                    <li>Today's Special - Rs.200</li>
+                    <li>
+                        Masala Channa
+                        <p class="menu-definition">
+                            Masala Channa is topped with tadka aloo. You can either pair it with pooris or chapati.
+                        </p>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        
+        <div class="menu-section">
+            <fieldset>
+                <legend>Lunch - Non-Veg</legend>
+                <img src="biryani.jpg" height="150" width="200" alt="Non-Veg Lunch" />
+                <ul class="menu-list">
+                    <li>Chicken Biryani - Rs.180</li>
+                    <li>Chicken Kabab - Rs.90</li>
+                    <li>Butter Chicken - Rs.150</li>
+                    <li>Today's Special - Rs.200</li>
+                    <li>
+                        Ulavacharu Biryani
+                        <p class="menu-definition">
+                            This is made with Ulavacharu.
+                        </p>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        
+        <div class="menu-section">
+            <fieldset>
+                <legend>Dinner</legend>
+                <img src="dinner.jpeg" height="150" width="200" alt="Dinner" />
+                <ul class="menu-list">
+                    <li>Plain Dosa - Rs.20</li>
+                    <li>Onion Dosa - Rs.30</li>
+                    <li>Chapati (2) - Rs.20</li>
+                    <li>Parota (2) - Rs.20</li>
+                    <li>Roti (2) - Rs.20</li>
+                </ul>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>

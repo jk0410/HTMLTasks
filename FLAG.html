@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Colored Flag</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="200"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        const stripeWidth = canvas.width / 3;
+
+        ctx.fillStyle = 'green';
+        ctx.fillRect(0, 0, stripeWidth, canvas.height);
+
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(stripeWidth, 0, stripeWidth, canvas.height);
+
+        ctx.fillStyle = 'red';
+        ctx.fillRect(stripeWidth * 2, 0, stripeWidth, canvas.height);
+    </script>
+</body>
+</html>
